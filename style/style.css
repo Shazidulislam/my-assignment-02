@@ -17,7 +17,7 @@ html{
 body{
     background-color: white;
     margin: auto;
-    width: 100rem;
+    width: 110rem;
     max-width: 100%;
     box-shadow: .1rem .1rem .1rem #4c4c4c,-.1rem 0rem .1rem ;
     font-family: "Quicksand", serif;
@@ -27,6 +27,7 @@ body{
 }
 main{
     margin: 1rem 6rem;
+    background-image: url(/assets/bg.png);
 }
 img{
     width: 100%;
@@ -85,15 +86,14 @@ img{
 .btn{
     font-size: 1.25rem;
     background-color: #FEA301;
-    padding: 10px 50px;
+    padding: 1rem 3rem;
     border: none;
     color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 16px;
     cursor: pointer;
 }
 #menu__icon{
     display: none;
-
 }
 /* nav style code end here  */
 /* banner style code start here  */
@@ -137,9 +137,9 @@ img{
     background-color: #111111;
 }
 /* banner style code emd here  */
-.standard-section{
-    background-image:url(/assets/bg.png);
-}
+/* .standard-section{
+    /* background-image:url(/assets/bg.png); *
+} */
 .standard__card-container{
 
     display: flex;
@@ -217,22 +217,101 @@ img{
 
     color: #8700FF ;
 }
+/* aro section is style here  */
+.aro__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 1rem;
+}
+.icon__btn{
+    padding: 1rem 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* story section is start here  */
+.stories-section{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+.story__img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    flex: 1;
+}
+.story__container{
+    flex: 1;
+}
+.story__container ,.sub__img{
 
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 1rem #000000;
+}
+#story__container,#sub__img{
+    padding: 1rem 2rem;
+}
 
+/* it hard  */
+.story__img{
+    border-radius: 1rem 1rem 0 0;
+}
+.story__title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+    margin: 2rem 0;
+}
+.sub__title{
+    font-size: 1.5rem;
+}
+.story__description{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #666666;
+    width: 80%;
+    margin: 2rem 0;
+}
+.story__btn{
+    background-color: #01ACFD;
+    position: relative;
+    top: -35px;
+
+}
+.sub-story__btn{
+    position: relative;
+    bottom: 30px;
+    font-size: 1rem;
+}
+.last-story__btn{
+    background-color: #000000;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  
+}
 /* responsive style code start here  */
 @media screen and (max-width:600px)  {
     html{
-        font-size: 55.5%;
+        font-size: 48.5%;
     }
-    .nav__title ,.nav__button{
-        display: none;
-    }
+    
     .nav__ul{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    #nav__menu{
+    #nav__menu ,
+    .nav__title ,
+    .nav__button ,
+    .story__container,
+    .icon__btn{
         display: none;
     }
     #menu__icon{
@@ -253,7 +332,12 @@ img{
     .standard__card-container{
         flex-direction: column;
     }
-    
+    .story__img-container{
+        /* grid-template-columns: repeat(1,1fr); */
+        width: 90%;
+    }
+ 
+      
     
 }
 /* responsive style code end here  */
