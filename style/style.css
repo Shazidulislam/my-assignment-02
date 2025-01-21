@@ -15,19 +15,18 @@ html{
     background-color: #E8F9FF;
 }
 body{
-    background-color: #fff;
+    background-color: white;
     margin: auto;
-    width: 120rem;
+    width: 100rem;
     max-width: 100%;
     box-shadow: .1rem .1rem .1rem #4c4c4c,-.1rem 0rem .1rem ;
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
      font-style: normal;
 
 }
 main{
-    margin: 1rem 4rem;
+    margin: 1rem 6rem;
 }
 img{
     width: 100%;
@@ -100,7 +99,7 @@ img{
 /* banner style code start here  */
 .banner__title{
     font-weight: 700;
-    font-size:4vw;
+    font-size:3.4vw;
     color: #111111;
     width: 90%;
 }
@@ -138,6 +137,88 @@ img{
     background-color: #111111;
 }
 /* banner style code emd here  */
+.standard-section{
+    background-image:url(/assets/bg.png);
+}
+.standard__card-container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.section__title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    padding: 2rem 0;
+}
+.card__img{
+    width: 50%;
+}
+.standard__card{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: .1rem .1rem .1rem #80808042;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+}
+.card__title{
+    font-weight: 800;
+    font-size: 2rem;
+    color: #202020;
+}
+.card__description{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #808080;
+}
+
+.card-one{
+    background-image: linear-gradient(180deg ,#11e7ce41 ,#ffffff00);
+
+}
+.card-two{
+    background-image: linear-gradient(180deg ,#ff600328 ,#fff2e93f);
+
+
+}
+.card-three{
+    background-image: linear-gradient(180deg ,#43405a31,#FFFFFF);
+}
+.card__btn-1{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #FFFFFF;
+    color: #64C8FF;
+
+}
+.card__btn-2{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #FFFFFF;
+    color: #F0AA00;
+
+}
+.card__btn-3{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #FFFFFF;
+
+    color: #8700FF ;
+}
+
+
 /* responsive style code start here  */
 @media screen and (max-width:600px)  {
     html{
@@ -169,6 +250,10 @@ img{
         width: 100%;
         text-align: center;
     }
+    .standard__card-container{
+        flex-direction: column;
+    }
+    
     
 }
 /* responsive style code end here  */
