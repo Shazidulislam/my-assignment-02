@@ -22,12 +22,13 @@ body{
     box-shadow: .1rem .1rem .1rem #4c4c4c,-.1rem 0rem .1rem ;
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-     font-style: normal;
-
+    font-style: normal;
+    background-image: linear-gradient(to top,#FEBA42,5%,#FFFDF9);
 }
 main{
     margin: 1rem 6rem;
     background-image: url(/assets/bg.png);
+
 }
 img{
     width: 100%;
@@ -137,11 +138,7 @@ img{
     background-color: #111111;
 }
 /* banner style code emd here  */
-/* .standard-section{
-    /* background-image:url(/assets/bg.png); *
-} */
 .standard__card-container{
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -231,6 +228,7 @@ img{
     cursor: pointer;
 }
 /* story section is start here  */
+
 .stories-section{
     display: flex;
     gap: 1.25rem;
@@ -245,6 +243,7 @@ img{
 }
 .story__container{
     flex: 1;
+    
 }
 .story__container ,.sub__img{
 
@@ -253,9 +252,9 @@ img{
 }
 #story__container,#sub__img{
     padding: 1rem 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0 0 1rem 1rem;
 }
-
-/* it hard  */
 .story__img{
     border-radius: 1rem 1rem 0 0;
 }
@@ -289,11 +288,51 @@ img{
 .last-story__btn{
     background-color: #000000;
     padding: 1rem 5rem;
+}
+#extra__div{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    margin: 2.5vw;
+}
+/* footer section is start here  */
+footer{
+    background-color: #16404D;
+}
+.footer__container{
+    margin: 0  6rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer__content{
+    padding: 2rem;
+}
+.nav__img-content{
+    width: 20rem;
+
+}
+.footer__title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+.footer__description{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 450;
+}
+.footer__link{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.footer__ul{
+    width: 20vw;
+    /* height: 10vw; */
+}
+.link__img{
+    width: 20%;
+
 }
 /* responsive style code start here  */
 @media screen and (max-width:600px)  {
@@ -332,8 +371,10 @@ img{
         flex-direction: column;
     }
     .story__img-container{
-        /* grid-template-columns: repeat(1,1fr); */
         width: 90%;
+    }
+    .footer__container{
+        grid-template-columns: repeat(1,1fr);
     }
  
       
