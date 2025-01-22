@@ -283,7 +283,7 @@ img{
 .sub-story__btn{
     position: relative;
     bottom: 30px;
-    font-size: 1rem;
+    font-size: 1vw ;
 }
 .last-story__btn{
     background-color: #000000;
@@ -295,14 +295,25 @@ img{
     align-items: center;
     margin: 2.5vw;
 }
+.story__btn-3,.story__btn-4{
+    background-color: #5D58F0;
+
+}
+.story__btn-2,.story__btn-5{
+    background-color: #95B226;
+}
+
 /* footer section is start here  */
 footer{
     background-color: #16404D;
 }
 .footer__container{
     margin: 0  6rem;
+    padding: 4rem 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: flex-start;
 }
 .footer__content{
     padding: 2rem;
@@ -311,6 +322,7 @@ footer{
     width: 20rem;
 
 }
+
 .footer__title{
     font-weight: 700;
     font-size: 3rem;
@@ -320,6 +332,8 @@ footer{
     color: #FFFFFF;
     font-size: 1.25rem;
     font-weight: 450;
+    margin: 3rem 0;
+    width: 90%;
 }
 .footer__link{
     color: #FFFFFF;
@@ -327,11 +341,21 @@ footer{
     font-weight: 500;
 }
 .footer__ul{
-    width: 20vw;
-    /* height: 10vw; */
+    width: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+#nav__content{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 2rem 0;
 }
 .link__img{
-    width: 20%;
+    width: 90%;
+    margin: 2rem 0;
 
 }
 /* responsive style code start here  */
@@ -376,9 +400,10 @@ footer{
     .footer__container{
         grid-template-columns: repeat(1,1fr);
     }
- 
-      
-    
+    .nav-container{
+        border: 1px solid  #fea10160 ;
+    }
+   
 }
 /* responsive style code end here  */
 
